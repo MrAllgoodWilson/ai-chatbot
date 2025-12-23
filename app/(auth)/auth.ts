@@ -5,6 +5,7 @@ import Credentials from "next-auth/providers/credentials";
 import { DUMMY_PASSWORD } from "@/lib/constants";
 import { createGuestUser, getUser } from "@/lib/db/queries";
 import { authConfig } from "./auth.config";
+import crypto from "crypto";
 
 export type UserType = "guest" | "regular";
 
