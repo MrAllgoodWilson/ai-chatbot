@@ -86,31 +86,42 @@ export const {
     }),
 
     // -------- GUEST LOGIN --------
-    Credentials({
-      id: "guest",
-      name: "Guest",
-      credentials: {},
-      async authorize() {
-        const result = await createGuestUser();
+    // -------- GUEST LOGIN --------
+Credentials({
+  id: "guest",
+  name: "Guest",
+  credentials: {},
+  async authorize() {
+    try {
+      const result = await createGuestUser();
 
-        if (!result || !result.length) {
-          // ❗ prevents CallbackRouteError
-          return null;
-        }
-
-        const guestUser = result[0];
-
-        if (!guestUser?.id) {
-          return null;
-        }
-
+      // Absolute guarantee: never return null
+      if (!result || !result.length || !result[0]?.id) {
         return {
-          ...guestUser,
+          id: crypto.randomUUID(),
+          email: null,
           type: "guest",
         };
-      },
-    }),
-  ],
+      }
+
+      return {
+        id: result[0].id,
+        email: result[0].email ?? null,
+        type: "guest",
+      };
+    } catch (err) {
+      console.error("createGuestUser failed:", err);
+
+      // Fallback guest user (prevents CallbackRouteError)
+      return {
+        id: crypto.randomUUID(),
+        email: null,
+        type: "guest",
+      };
+    }
+  },
+}),
+
 
   callbacks: {
     async jwt({ token, user }) {
