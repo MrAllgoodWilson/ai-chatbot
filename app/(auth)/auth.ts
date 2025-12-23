@@ -123,7 +123,7 @@ Credentials({
     }
   },
 }),
-
+],
 
   callbacks: {
     async jwt({ token, user }) {
