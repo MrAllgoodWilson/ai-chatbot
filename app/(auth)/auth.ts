@@ -16,9 +16,8 @@ declare module "next-auth" {
     } & DefaultSession["user"];
   }
 
-  // biome-ignore lint/nursery/useConsistentTypeDefinitions: "Required"
   interface User {
-    id?: string;
+    id: string;
     email?: string | null;
     type: UserType;
   }
@@ -38,38 +37,46 @@ export const {
   signOut,
 } = NextAuth({
   ...authConfig,
+
+  // ✅ REQUIRED
+  session: {
+    strategy: "jwt",
+  },
+
   providers: [
+    // -------- REGULAR LOGIN --------
     Credentials({
+      id: "credentials",
+      name: "Credentials",
       credentials: {},
       async authorize({ email, password }: any) {
-        // Demo mode - allow any login for testing
         const isDemoMode = process.env.DEMO_MODE === "true";
 
         if (isDemoMode) {
-          // Allow any email/password in demo mode
           return {
             id: `demo-${Date.now()}`,
             email: email || "demo@tiqology.com",
-            type: "regular" as UserType,
+            type: "regular",
           };
         }
 
-        const users = await getUser(email);
+        if (!email || !password) {
+          return null;
+        }
 
-        if (users.length === 0) {
+        const users = await getUser(email);
+        if (!users.length) {
           await compare(password, DUMMY_PASSWORD);
           return null;
         }
 
         const [user] = users;
-
-        if (!user.password) {
+        if (!user?.password) {
           await compare(password, DUMMY_PASSWORD);
           return null;
         }
 
         const passwordsMatch = await compare(password, user.password);
-
         if (!passwordsMatch) {
           return null;
         }
@@ -77,30 +84,48 @@ export const {
         return { ...user, type: "regular" };
       },
     }),
+
+    // -------- GUEST LOGIN --------
     Credentials({
       id: "guest",
+      name: "Guest",
       credentials: {},
       async authorize() {
-        const [guestUser] = await createGuestUser();
-        return { ...guestUser, type: "guest" };
+        const result = await createGuestUser();
+
+        if (!result || !result.length) {
+          // ❗ prevents CallbackRouteError
+          return null;
+        }
+
+        const guestUser = result[0];
+
+        if (!guestUser?.id) {
+          return null;
+        }
+
+        return {
+          ...guestUser,
+          type: "guest",
+        };
       },
     }),
   ],
+
   callbacks: {
-    jwt({ token, user }) {
+    async jwt({ token, user }) {
       if (user) {
-        token.id = user.id as string;
+        token.id = user.id;
         token.type = user.type;
       }
-
       return token;
     },
-    session({ session, token }) {
+
+    async session({ session, token }) {
       if (session.user) {
         session.user.id = token.id;
         session.user.type = token.type;
       }
-
       return session;
     },
   },
