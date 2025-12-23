@@ -16,6 +16,9 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { EventEmitter } from "events";
 import type Redis from "ioredis";
+type RedisStreamMessage = [string, string[]];
+type RedisStream = [string, RedisStreamMessage[]];
+type RedisXReadGroupResult = RedisStream[];
 
 // ============================================
 // TYPES & INTERFACES
@@ -217,18 +220,19 @@ export class ContextSynchronizer extends EventEmitter {
     // Continuous read loop
     while (this.isInitialized) {
       try {
-        const results = await this.redis.xreadgroup(
-          "GROUP",
-          "context-sync",
-          consumerId,
-          "COUNT",
-          10,
-          "BLOCK",
-          1000,
-          "STREAMS",
-          this.STREAM_KEY,
-          ">"
-        );
+        const results = (await this.redis.xreadgroup(
+  "GROUP",
+  "context-sync",
+  consumerId,
+  "COUNT",
+  10,
+  "BLOCK",
+  1000,
+  "STREAMS",
+  this.STREAM_KEY,
+  ">"
+)) as RedisXReadGroupResult | null;
+
 
         if (results && results.length > 0) {
           for (const [stream, messages] of results) {
