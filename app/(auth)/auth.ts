@@ -114,12 +114,13 @@ export const {
 
   callbacks: {
     async jwt({ token, user }) {
-      if (user) {
-        token.id = user.id;
-        token.type = user.type;
-      }
-      return token;
-    },
+  if (user?.id) {
+    token.id = user.id;
+    token.type = user.type;
+  }
+  return token;
+},
+
 
     async session({ session, token }) {
       if (session.user) {
