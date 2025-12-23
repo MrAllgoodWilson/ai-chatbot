@@ -779,13 +779,17 @@ class AgentSwarmController extends EventEmitter {
     );
 
     if (buildDoctor) {
-      await neuralMesh.publish("agent-control", {
-  type: "health-check",
+      await neuralMesh.publish({
+  event: "agent-control",
   source: agentId,
-  target: buildDoctor.config.id,
-  data: { health: agent.health },
+  payload: {
+    type: "health-check",
+    target: buildDoctor.config.id,
+    data: { health: agent.health },
+  },
   timestamp: Date.now(),
 });
+
 
     }
 
