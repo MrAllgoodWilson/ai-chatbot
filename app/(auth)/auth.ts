@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { compare } from "bcrypt-ts";
 import NextAuth, { type DefaultSession } from "next-auth";
 import type { DefaultJWT } from "next-auth/jwt";
