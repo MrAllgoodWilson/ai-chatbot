@@ -46,6 +46,15 @@ interface AnonymizationOptions {
   tokenize?: boolean;
   hashSalt?: string;
 }
+interface AuditLogInput {
+  userId: string;
+  action: string;
+  dataType: string;
+  ipAddress?: string;
+  userAgent?: string;
+  complianceFlags: string[];
+}
+
 
 interface ConsentRecord {
   userId: string;
@@ -377,20 +386,32 @@ class PrivacyMesh {
   /**
    * Log audit trail entry (immutable)
    */
-  async logAudit(
-    entry: Omit<AuditLogEntry, "id" | "timestamp" | "signature">
-  ): Promise<void> {
-    const auditEntry: AuditLogEntry = {
-      id: crypto.randomUUID(),
-      ...entry,
-      timestamp: new Date(),
-      signature: "", // Will be set below
-    };
+  async logAudit(entry: AuditLogInput): Promise<void> {
+  const auditEntry: AuditLogEntry = {
+    id: crypto.randomUUID(),
+    userId: entry.userId,
+    action: entry.action,
+    dataType: entry.dataType,
+    timestamp: new Date(),
+    ipAddress: entry.ipAddress,
+    userAgent: entry.userAgent,
+    complianceFlags: entry.complianceFlags,
+    signature: "",
+    hash: "",
+    previousHash:
+      this.auditChain.length > 0
+        ? this.auditChain[this.auditChain.length - 1].hash
+        : "genesis",
+  };
 
-    // Generate cryptographic signature
-    auditEntry.signature = this.signAuditEntry(auditEntry);
+  auditEntry.signature = this.signAuditEntry(auditEntry);
+  auditEntry.hash = this.calculateAuditHash(auditEntry);
 
-    const { error } = await this.supabase.from("privacy_audit_logs").insert({
+  this.auditChain.push(auditEntry);
+
+  const { error } = await this.supabase
+    .from("privacy_audit_logs")
+    .insert({
       id: auditEntry.id,
       user_id: auditEntry.userId,
       action: auditEntry.action,
@@ -400,12 +421,15 @@ class PrivacyMesh {
       user_agent: auditEntry.userAgent,
       compliance_flags: auditEntry.complianceFlags,
       signature: auditEntry.signature,
+      hash: auditEntry.hash,
+      previous_hash: auditEntry.previousHash,
     });
 
-    if (error) {
-      console.error("[Privacy Mesh] Failed to log audit entry:", error);
-    }
+  if (error) {
+    console.error("[Privacy Mesh] Failed to log audit entry:", error);
   }
+}
+
 
   /**
    * Sign audit entry for tamper detection
