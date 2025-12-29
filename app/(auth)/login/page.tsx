@@ -25,7 +25,8 @@ export default function Page() {
     }
   );
 
-  const { update: updateSession } = useSession();
+  // const { update: updateSession } = useSession();
+  const { data: session, status, update: updateSession } = useSession();
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: router and updateSession are stable refs
   useEffect(() => {
@@ -45,6 +46,13 @@ export default function Page() {
       router.refresh();
     }
   }, [state.status]);
+  \
+  useEffect(() => {
+  if (status === "authenticated") {
+    router.replace("/");
+  }
+}, [status, router]);
+
 
   const handleSubmit = (formData: FormData) => {
     setEmail(formData.get("email") as string);
