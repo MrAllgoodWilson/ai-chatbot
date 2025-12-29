@@ -19,8 +19,7 @@ async function NewChatPage() {
   const session = await auth();
 
   if (!session) {
-    // redirect("/api/auth/guest");
-    redirect("/login");
+    redirect("/api/auth/guest");
   }
 
   const id = generateUUID();
