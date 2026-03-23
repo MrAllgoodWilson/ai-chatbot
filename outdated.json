@@ -1,7 +1,37 @@
 {
+  "@ai-sdk/provider": {
+    "latest": "3.0.8",
+    "wanted": "3.0.8",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@codemirror/lang-javascript": {
+    "latest": "6.2.5",
+    "wanted": "6.2.5",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@codemirror/lang-python": {
+    "latest": "6.2.1",
+    "wanted": "6.2.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@codemirror/theme-one-dark": {
+    "latest": "6.1.3",
+    "wanted": "6.1.3",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "@monaco-editor/react": {
     "latest": "4.7.0",
     "wanted": "4.7.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@octokit/rest": {
+    "latest": "22.0.1",
+    "wanted": "22.0.1",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -10,6 +40,24 @@
     "wanted": "1.9.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
+  },
+  "@opentelemetry/api-logs": {
+    "latest": "0.213.0",
+    "wanted": "0.213.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@pinecone-database/pinecone": {
+    "latest": "7.1.0",
+    "wanted": "7.1.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@playwright/test": {
+    "latest": "1.58.2",
+    "wanted": "1.58.2",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
   },
   "@radix-ui/react-dialog": {
     "latest": "1.1.15",
@@ -59,15 +107,75 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "@radix-ui/react-visually-hidden": {
+    "latest": "1.2.4",
+    "wanted": "1.2.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@react-three/drei": {
+    "latest": "10.7.7",
+    "wanted": "10.7.7",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "@react-three/fiber": {
+    "latest": "9.5.0",
+    "wanted": "9.5.0",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "@react-three/xr": {
+    "latest": "6.6.29",
+    "wanted": "6.6.29",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "@tailwindcss/typography": {
+    "latest": "0.5.19",
+    "wanted": "0.5.19",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
   "@types/d3-scale": {
     "latest": "4.0.9",
     "wanted": "4.0.9",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
   },
+  "@types/papaparse": {
+    "latest": "5.5.2",
+    "wanted": "5.5.2",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "@types/pdf-parse": {
+    "latest": "1.1.5",
+    "wanted": "1.1.5",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "@types/react": {
+    "latest": "19.2.14",
+    "wanted": "19.2.14",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "@types/react-dom": {
+    "latest": "19.2.3",
+    "wanted": "19.2.3",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
   "@types/react-syntax-highlighter": {
     "latest": "15.5.13",
     "wanted": "15.5.13",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "@types/three": {
+    "latest": "0.183.1",
+    "wanted": "0.183.1",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
   },
@@ -81,6 +189,36 @@
     "latest": "1.9.7",
     "wanted": "1.9.7",
     "isDeprecated": true,
+    "dependencyType": "dependencies"
+  },
+  "@vercel/blob": {
+    "latest": "2.3.1",
+    "wanted": "2.3.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@vercel/functions": {
+    "latest": "3.4.3",
+    "wanted": "3.4.3",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@vercel/otel": {
+    "latest": "2.1.1",
+    "wanted": "2.1.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@webgpu/types": {
+    "latest": "0.1.69",
+    "wanted": "0.1.69",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "bcrypt-ts": {
+    "latest": "8.0.1",
+    "wanted": "8.0.1",
+    "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "class-variance-authority": {
@@ -98,6 +236,12 @@
   "clsx": {
     "latest": "2.1.1",
     "wanted": "2.1.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "codemirror": {
+    "latest": "6.0.2",
+    "wanted": "6.0.2",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -119,6 +263,18 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "dotenv": {
+    "latest": "17.3.1",
+    "wanted": "17.3.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "drizzle-orm": {
+    "latest": "0.45.1",
+    "wanted": "0.45.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "embla-carousel-react": {
     "latest": "8.6.0",
     "wanted": "8.6.0",
@@ -128,6 +284,18 @@
   "fast-deep-equal": {
     "latest": "3.1.3",
     "wanted": "3.1.3",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "geist": {
+    "latest": "1.7.0",
+    "wanted": "1.7.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "lucide-react": {
+    "latest": "0.577.0",
+    "wanted": "0.577.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -143,9 +311,39 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "next-themes": {
+    "latest": "0.4.6",
+    "wanted": "0.4.6",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "orderedmap": {
     "latest": "2.1.1",
     "wanted": "2.1.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "papaparse": {
+    "latest": "5.5.3",
+    "wanted": "5.5.3",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "pg": {
+    "latest": "8.20.0",
+    "wanted": "8.20.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "postcss": {
+    "latest": "8.5.8",
+    "wanted": "8.5.8",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "postgres": {
+    "latest": "3.4.8",
+    "wanted": "3.4.8",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -155,9 +353,39 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "prosemirror-inputrules": {
+    "latest": "1.5.1",
+    "wanted": "1.5.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "prosemirror-markdown": {
+    "latest": "1.13.4",
+    "wanted": "1.13.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "prosemirror-model": {
+    "latest": "1.25.4",
+    "wanted": "1.25.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "prosemirror-schema-basic": {
+    "latest": "1.2.4",
+    "wanted": "1.2.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "prosemirror-schema-list": {
     "latest": "1.5.1",
     "wanted": "1.5.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "prosemirror-state": {
+    "latest": "1.4.4",
+    "wanted": "1.4.4",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -167,15 +395,111 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "react": {
+    "latest": "19.2.4",
+    "wanted": "19.2.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "react-data-grid": {
+    "latest": "7.0.0-beta.59",
+    "wanted": "7.0.0-beta.59",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "react-dom": {
+    "latest": "19.2.4",
+    "wanted": "19.2.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "react-force-graph-2d": {
+    "latest": "1.29.1",
+    "wanted": "1.29.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "react-syntax-highlighter": {
+    "latest": "16.1.1",
+    "wanted": "16.1.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "recharts": {
+    "latest": "3.8.0",
+    "wanted": "3.8.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "redis": {
+    "latest": "5.11.0",
+    "wanted": "5.11.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "server-only": {
     "latest": "0.0.1",
     "wanted": "0.0.1",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
+  "shiki": {
+    "latest": "4.0.2",
+    "wanted": "4.0.2",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "sonner": {
+    "latest": "2.0.7",
+    "wanted": "2.0.7",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "swr": {
+    "latest": "2.4.1",
+    "wanted": "2.4.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "tailwind-merge": {
+    "latest": "3.5.0",
+    "wanted": "3.5.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
   "tailwindcss-animate": {
     "latest": "1.0.7",
     "wanted": "1.0.7",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "three": {
+    "latest": "0.183.2",
+    "wanted": "0.183.2",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "tokenlens": {
+    "latest": "1.3.1",
+    "wanted": "1.3.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "tsx": {
+    "latest": "4.21.0",
+    "wanted": "4.21.0",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "typescript": {
+    "latest": "5.9.3",
+    "wanted": "5.9.3",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "use-stick-to-bottom": {
+    "latest": "1.1.3",
+    "wanted": "1.1.3",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -191,507 +515,201 @@
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "yaml": {
-    "latest": "2.8.2",
-    "wanted": "2.8.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@codemirror/lang-javascript": {
-    "latest": "6.2.5",
-    "wanted": "6.2.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@codemirror/state": {
-    "latest": "6.5.4",
-    "wanted": "6.5.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@codemirror/theme-one-dark": {
-    "latest": "6.1.3",
-    "wanted": "6.1.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@react-three/xr": {
-    "latest": "6.6.29",
-    "wanted": "6.6.28",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
-  },
-  "@tanstack/react-query": {
-    "latest": "5.90.21",
-    "wanted": "5.90.12",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@types/pdf-parse": {
-    "latest": "1.1.5",
-    "wanted": "1.1.4",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "codemirror": {
-    "latest": "6.0.2",
-    "wanted": "6.0.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "nanoid": {
-    "latest": "5.1.6",
-    "wanted": "5.1.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "papaparse": {
-    "latest": "5.5.3",
-    "wanted": "5.5.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "postcss": {
-    "latest": "8.5.8",
-    "wanted": "8.5.3",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "postgres": {
-    "latest": "3.4.8",
-    "wanted": "3.4.5",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-markdown": {
-    "latest": "1.13.4",
-    "wanted": "1.13.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-schema-basic": {
-    "latest": "1.2.4",
-    "wanted": "1.2.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-state": {
-    "latest": "1.4.4",
-    "wanted": "1.4.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "react-force-graph-2d": {
-    "latest": "1.29.1",
-    "wanted": "1.29.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "resumable-stream": {
-    "latest": "2.2.10",
-    "wanted": "2.2.8",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "tokenlens": {
-    "latest": "1.3.1",
-    "wanted": "1.3.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "use-stick-to-bottom": {
-    "latest": "1.1.3",
-    "wanted": "1.1.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@aws-sdk/client-braket": {
-    "latest": "3.1004.0",
-    "wanted": "3.956.0",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
-  },
-  "@biomejs/biome": {
-    "latest": "2.4.6",
-    "wanted": "2.2.2",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@codemirror/lang-python": {
-    "latest": "6.2.1",
-    "wanted": "6.1.7",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@codemirror/view": {
-    "latest": "6.39.16",
-    "wanted": "6.36.4",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@icons-pack/react-simple-icons": {
-    "latest": "13.12.0",
-    "wanted": "13.8.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@playwright/test": {
-    "latest": "1.58.2",
-    "wanted": "1.51.0",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@radix-ui/react-visually-hidden": {
-    "latest": "1.2.4",
-    "wanted": "1.1.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@supabase/supabase-js": {
-    "latest": "2.98.0",
-    "wanted": "2.86.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@tailwindcss/postcss": {
-    "latest": "4.2.1",
-    "wanted": "4.1.16",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@types/papaparse": {
-    "latest": "5.5.2",
-    "wanted": "5.3.15",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@vercel/analytics": {
-    "latest": "1.6.1",
-    "wanted": "1.5.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "geist": {
-    "latest": "1.7.0",
-    "wanted": "1.3.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "ioredis": {
-    "latest": "5.10.0",
-    "wanted": "5.8.2",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "next": {
-    "latest": "16.1.6",
-    "wanted": "16.0.7",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "openai": {
-    "latest": "6.27.0",
-    "wanted": "6.10.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "pg": {
-    "latest": "8.20.0",
-    "wanted": "8.16.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-inputrules": {
-    "latest": "1.5.1",
-    "wanted": "1.4.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-model": {
-    "latest": "1.25.4",
-    "wanted": "1.24.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "prosemirror-view": {
-    "latest": "1.41.6",
-    "wanted": "1.38.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "react": {
-    "latest": "19.2.4",
-    "wanted": "19.0.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "react-dom": {
-    "latest": "19.2.4",
-    "wanted": "19.0.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "recharts": {
-    "latest": "3.8.0",
-    "wanted": "3.5.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "redis": {
-    "latest": "5.11.0",
-    "wanted": "5.9.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "swr": {
-    "latest": "2.4.1",
-    "wanted": "2.3.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "tailwindcss": {
-    "latest": "4.2.1",
-    "wanted": "4.1.16",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "tsx": {
-    "latest": "4.21.0",
-    "wanted": "4.19.3",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "typescript": {
-    "latest": "5.9.3",
-    "wanted": "5.8.2",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "ws": {
-    "latest": "8.19.0",
-    "wanted": "8.18.3",
+  "zod": {
+    "latest": "4.3.6",
+    "wanted": "4.3.6",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@ai-sdk/gateway": {
-    "latest": "3.0.66",
-    "wanted": "1.0.41",
+    "latest": "3.0.77",
+    "wanted": "3.0.66",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@ai-sdk/google": {
-    "latest": "3.0.43",
-    "wanted": "2.0.44",
+    "latest": "3.0.52",
+    "wanted": "3.0.43",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@ai-sdk/openai": {
-    "latest": "3.0.41",
-    "wanted": "2.0.85",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@ai-sdk/provider": {
-    "latest": "3.0.8",
-    "wanted": "2.0.0",
+    "latest": "3.0.47",
+    "wanted": "3.0.41",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@ai-sdk/react": {
-    "latest": "3.0.118",
-    "wanted": "2.0.26",
+    "latest": "3.0.136",
+    "wanted": "3.0.118",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@ai-sdk/xai": {
-    "latest": "3.0.67",
-    "wanted": "2.0.13",
+    "latest": "3.0.73",
+    "wanted": "3.0.67",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "@octokit/rest": {
-    "latest": "22.0.1",
-    "wanted": "21.1.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@pinecone-database/pinecone": {
-    "latest": "7.1.0",
-    "wanted": "6.1.3",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@react-three/drei": {
-    "latest": "10.7.7",
-    "wanted": "9.122.0",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
-  },
-  "@react-three/fiber": {
-    "latest": "9.5.0",
-    "wanted": "8.18.0",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
-  },
-  "@types/node": {
-    "latest": "25.3.5",
-    "wanted": "22.13.10",
+  "@biomejs/biome": {
+    "latest": "2.4.8",
+    "wanted": "2.4.6",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
   },
-  "@types/react": {
-    "latest": "19.2.14",
-    "wanted": "18.3.18",
+  "@tailwindcss/postcss": {
+    "latest": "4.2.2",
+    "wanted": "4.2.1",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
-  },
-  "@types/react-dom": {
-    "latest": "19.2.3",
-    "wanted": "18.3.5",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@vercel/functions": {
-    "latest": "3.4.3",
-    "wanted": "2.2.13",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@vercel/otel": {
-    "latest": "2.1.1",
-    "wanted": "1.14.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
   },
   "ai": {
-    "latest": "6.0.116",
-    "wanted": "5.0.26",
+    "latest": "6.0.134",
+    "wanted": "6.0.116",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "bcrypt-ts": {
-    "latest": "8.0.1",
-    "wanted": "5.0.3",
+  "ioredis": {
+    "latest": "5.10.1",
+    "wanted": "5.10.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "dotenv": {
-    "latest": "17.3.1",
-    "wanted": "16.4.7",
+  "nanoid": {
+    "latest": "5.1.7",
+    "wanted": "5.1.6",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "framer-motion": {
-    "latest": "12.35.1",
-    "wanted": "11.18.2",
+  "prosemirror-view": {
+    "latest": "1.41.7",
+    "wanted": "1.41.6",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "react-resizable-panels": {
-    "latest": "4.7.2",
-    "wanted": "2.1.7",
+    "latest": "4.7.5",
+    "wanted": "4.7.2",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "react-syntax-highlighter": {
-    "latest": "16.1.1",
-    "wanted": "15.6.6",
+  "resumable-stream": {
+    "latest": "2.2.12",
+    "wanted": "2.2.10",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "shiki": {
-    "latest": "4.0.2",
-    "wanted": "3.14.0",
+  "tailwindcss": {
+    "latest": "4.2.2",
+    "wanted": "4.2.1",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "yaml": {
+    "latest": "2.8.3",
+    "wanted": "2.8.2",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
-  "sonner": {
-    "latest": "2.0.7",
-    "wanted": "1.7.4",
+  "@aws-sdk/client-braket": {
+    "latest": "3.1014.0",
+    "wanted": "3.1004.0",
+    "isDeprecated": false,
+    "dependencyType": "optionalDependencies"
+  },
+  "@codemirror/state": {
+    "latest": "6.6.0",
+    "wanted": "6.5.4",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@codemirror/view": {
+    "latest": "6.40.0",
+    "wanted": "6.39.16",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@icons-pack/react-simple-icons": {
+    "latest": "13.13.0",
+    "wanted": "13.12.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@supabase/supabase-js": {
+    "latest": "2.99.3",
+    "wanted": "2.98.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@tanstack/react-query": {
+    "latest": "5.95.0",
+    "wanted": "5.90.21",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@types/node": {
+    "latest": "25.5.0",
+    "wanted": "25.3.5",
+    "isDeprecated": false,
+    "dependencyType": "devDependencies"
+  },
+  "framer-motion": {
+    "latest": "12.38.0",
+    "wanted": "12.35.1",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "next": {
+    "latest": "16.2.1",
+    "wanted": "16.1.6",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "openai": {
+    "latest": "6.32.0",
+    "wanted": "6.27.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "streamdown": {
-    "latest": "2.4.0",
-    "wanted": "1.4.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "tailwind-merge": {
-    "latest": "3.5.0",
-    "wanted": "2.6.0",
+    "latest": "2.5.0",
+    "wanted": "2.4.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "ultracite": {
-    "latest": "7.2.5",
-    "wanted": "5.3.9",
+    "latest": "7.3.2",
+    "wanted": "7.2.5",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
   },
-  "zod": {
-    "latest": "4.3.6",
-    "wanted": "3.25.76",
+  "ws": {
+    "latest": "8.20.0",
+    "wanted": "8.19.0",
+    "isDeprecated": false,
+    "dependencyType": "dependencies"
+  },
+  "@vercel/analytics": {
+    "latest": "2.0.1",
+    "wanted": "1.6.1",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
   "@anthropic-ai/sdk": {
-    "latest": "0.78.0",
-    "wanted": "0.71.2",
+    "latest": "0.80.0",
+    "wanted": "0.78.0",
     "isDeprecated": false,
     "dependencyType": "dependencies"
-  },
-  "@opentelemetry/api-logs": {
-    "latest": "0.213.0",
-    "wanted": "0.200.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@tailwindcss/typography": {
-    "latest": "0.5.19",
-    "wanted": "0.5.16",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@types/three": {
-    "latest": "0.183.1",
-    "wanted": "0.160.0",
-    "isDeprecated": false,
-    "dependencyType": "devDependencies"
-  },
-  "@vercel/blob": {
-    "latest": "2.3.1",
-    "wanted": "0.24.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "@webgpu/types": {
-    "latest": "0.1.69",
-    "wanted": "0.1.68",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
   },
   "drizzle-kit": {
-    "latest": "0.31.9",
-    "wanted": "0.25.0",
+    "latest": "0.31.10",
+    "wanted": "0.31.9",
     "isDeprecated": false,
     "dependencyType": "devDependencies"
   },
-  "drizzle-orm": {
-    "latest": "0.45.1",
-    "wanted": "0.34.1",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
   "katex": {
-    "latest": "0.16.38",
-    "wanted": "0.16.25",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "lucide-react": {
-    "latest": "0.577.0",
-    "wanted": "0.446.0",
+    "latest": "0.16.40",
+    "wanted": "0.16.38",
     "isDeprecated": false,
     "dependencyType": "dependencies"
   },
@@ -700,23 +718,5 @@
     "wanted": "5.0.0-beta.25",
     "isDeprecated": false,
     "dependencyType": "dependencies"
-  },
-  "next-themes": {
-    "latest": "0.4.6",
-    "wanted": "0.3.0",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "react-data-grid": {
-    "latest": "7.0.0-beta.59",
-    "wanted": "7.0.0-beta.47",
-    "isDeprecated": false,
-    "dependencyType": "dependencies"
-  },
-  "three": {
-    "latest": "0.183.2",
-    "wanted": "0.160.1",
-    "isDeprecated": false,
-    "dependencyType": "optionalDependencies"
   }
 }
