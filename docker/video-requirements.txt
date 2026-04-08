@@ -1,5 +1,5 @@
 diffusers==0.25.0
-transformers==4.53.0
+transformers==5.0.0rc3
 accelerate==0.25.0
 torch==2.8.0
 torchvision==0.16.0
